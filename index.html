@@ -3,23 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Test</title>
+	<script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div id="main">
-		<h1 id="naglowek">Goha goha goha 3 zl</h1>
-	</div>
-	
-	<script>
-	var x=[4,3,2,1];
-	var wynik;
-	
-	for(i = x.length; i>0; i--){
-		element = i-1;
-		wynik += x[element] + " ";
-	};
-	
-	document.getElementById('naglowek').innerText = wynik;
-	
-	</script>
+	<script>$("#testLoad").load("https://www.diki.pl/slownik-angielskiego?q=glaring");</script>
+	<div id="testLoad"></div>
 </body>
 </html>
